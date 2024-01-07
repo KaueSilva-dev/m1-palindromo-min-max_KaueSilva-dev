@@ -19,13 +19,13 @@ function arrayMaxMin(arr) {
   let arrReturn = [];
   let max = 0;
   arrReturn[0] = arr[0];
-  for( let i = 0; i <= arr.length-1; i++) {
-      if(arrReturn[0] > arr[i]) {
-          arrReturn[0] = arr[i];
-      } else if (max < arr[i]){
-          max = arr[i];
-          arrReturn[1] = arr[i];
-      }
+  for (let i = 0; i <= arr.length - 1; i++) {
+    if (arrReturn[0] > arr[i]) {
+      arrReturn[0] = arr[i];
+    } else if (max < arr[i]) {
+      max = arr[i];
+      arrReturn[1] = arr[i];
+    }
   }
   return arrReturn;
 }
